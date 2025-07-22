@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html, body {
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100vw;
+
+}
+
+.header-wrap {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    left: 0;
+    position: absolute;
+    z-index: 1000;
+    height: 60px;
+}
+
+/* 메뉴 */
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    position: relative;
+    font-weight: 600;
+    color: white;
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 12px;   /* 글자 아래쪽에 밑줄 위치 */
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+#nav ul li a:hover::after {
+    width: 70%;  /* 원하는 밑줄 길이(100%로 하면 전체) */
+}
+
+#about-me {
+    height: 100dvh;
+    padding-top: 70px;
+    background-color: #272727;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+footer {
+    width: 100vw;
+    height: 120px;
+    background-color: #666;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-title {
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.footer-github {
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
