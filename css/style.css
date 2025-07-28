@@ -74,6 +74,15 @@ nav ul li a::after {
     text-align: center;
 }
 
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0.05rem;
+    padding: 0.5rem;
+    border:2px solid #9b9b9b;
+    border-radius: 15%;
+}
+
 footer {
     width: 100vw;
     height: 120px;
