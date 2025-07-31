@@ -146,14 +146,21 @@ nav ul li a::after {
     display: block;
 }
 
-footer {
-    width: 100vw;
-    height: 120px;
-    background-color: #666;
+.footer-section {
+    background: #666;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer {
+    width: 100vw;
+    min-height: 120px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
 }
 
 .footer-title {

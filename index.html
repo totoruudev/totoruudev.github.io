@@ -12,6 +12,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+    <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css" />
+    <script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
     <title>CHANWOO CHOI | Developer's Portfolio</title>
 </head>
 
@@ -40,11 +42,11 @@
             </div>
         </header>
 
-        <main class="contents">
-            <section id="main-page" class="main-page" >
+        <main id="fullpage" class="contents">
+            <section id="main-page" class="section main-page" data-anchor="main-page">
 
             </section>
-            <section id="about-me" class="about-me">
+            <section id="about-me" class="section about-me" data-anchor="about-me" >
                 <p class="about-me-title">초보 개발자 최찬우입니다.</p> <br>
                 <p>
                     웹 개발이라는 분야에 처음 도전할 때는<br>
@@ -81,7 +83,7 @@
                     <li>사용자 경험을 생각하며, 협업과 소통을 중요하게 여기는 개발자</li>
                 </ul>
             </section>
-            <section id="skill" class="skill">
+            <section id="skill" class="section skill" data-anchor="skill">
                 <div class="skill-container">
                     <div class="skill-wrap">
                         <img class="skill-icon" src="images/icons/html5.svg" alt="html logo">
@@ -106,32 +108,7 @@
                     </div>
                 </div>
             </section>
-            <section id="portfolio" class="portfolio">
-                <div id="amore-chat-container" class="amore-chat-container">
-                    <div class="amore-chat-wrap">
-                        <div class="amore-chat">
-                            <h2>아모레퍼시픽 채팅방 구현</h2>
-                            <br>
-                            <p>SpringBoot의 WebSocket을 이용한<br>관리자와 사용자의 1:1 채팅방을 구현했습니다.</p>
-                            <br>
-                            <div class="amore-chat-flex">
-                                <p>BackEnd</p>
-                                <img src="images/icons/spring.svg" alt="">
-                                <img src="images/icons/mysql.svg" alt="">
-                            </div>
-                            <div class="amore-chat-flex">
-                                <p>FrontEnd</p>
-                                <img src="images/icons/html5.svg" alt="">
-                                <img src="images/icons/CSS3.svg" alt="">
-                                <img src="images/icons/bootstrap.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="amore-chat-imgbox">
-                            <img src="images/amorechat_admin_1-down.png" alt="사용자 채팅">
-                            <img src="images/amorechat_1.png" alt="">
-                        </div>
-                    </div>
-                </div>
+            <section id="portfolio amore" class="section portfolio" data-anchor="portfolio">
                 <div id="amore-chat-container" class="amore-chat-container">
                     <div class="amore-chat-wrap">
                         <div class="amore-chat">
@@ -158,20 +135,64 @@
                     </div>
                 </div>
             </section>
-        </main>
-        <footer id="footer" class="footer">
-            <div id="footer-wrap" class="footer-wrap">
-                <p class="footer-title">
-                    &copy; 2025 CHANWOO CHOI. ALL rights reserved.
-                </p>
-                <div class="footer-github">
-                    <a href="https://github.com/totoruudev" target="_blank" rel="noopener noreferrer"
-                        class="footer-github" aria-label="GitHub">
-                        <img style="width: 50px; height: 50px;" src="images/icons/github.svg" alt="github logo">
+            <section id="portfolio cgv" class="section portfolio" data-anchor="portfolio">
+                <div id="amore-chat-container" class="amore-chat-container">
+                    <div class="amore-chat-wrap">
+                        <div class="amore-chat">
+                            <h2>아모레퍼시픽 채팅방 구현</h2>
+                            <br>
+                            <p>SpringBoot의 WebSocket을 이용한<br>관리자와 사용자의 1:1 채팅방을 구현했습니다.</p>
+                            <br>
+                            <div class="amore-chat-flex">
+                                <p>BackEnd</p>
+                                <img src="images/icons/spring.svg" alt="">
+                                <img src="images/icons/mysql.svg" alt="">
+                            </div>
+                            <div class="amore-chat-flex">
+                                <p>FrontEnd</p>
+                                <img src="images/icons/html5.svg" alt="">
+                                <img src="images/icons/CSS3.svg" alt="">
+                                <img src="images/icons/bootstrap.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="amore-chat-imgbox">
+                            <img src="images/amorechat_admin_1-down.png" alt="사용자 채팅">
+                            <img src="images/amorechat_1.png" alt="">
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </section>
+            <section class="section footer-section" id="footer-section" data-anchor="footer">
+                <footer id="footer" class="footer">
+                    <div id="footer-wrap" class="footer-wrap">
+                        <p class="footer-title">&copy; 2025 CHANWOO CHOI. ALL rights reserved.</p>
+                        <div class="footer-github">
+                            <a href="https://github.com/totoruudev" target="_blank" rel="noopener noreferrer" class="footer-github" aria-label="GitHub">
+                                <img style="width: 50px; height: 50px;" src="images/icons/github.svg" alt="github logo">
+                            </a>
+                        </div>
+                        <a href="mailto:totorudev@gmail.com" aria-label="Email" style="text-align: center;">
+                            <i class="fas fa-envelope"></i> totorudev@gmail.com
+                        </a>
+                        <br><br>
+                        <p style="text-align: center;">Last Update: 2025.07.31.</p>
+                    </div>
+                </footer>
+            </section>
+        </main>
     </div>
 </body>
 
 </html>
+
+<script>
+new fullpage('#fullpage', {
+    anchors: ['main-page', 'about-me', 'skill', 'amore', 'cgv', 'footer'],
+    menu: '#menu',
+    navigation: true,
+    scrollOverflow: true,
+    autoScrolling: true,
+    fitToSection: true,
+});
+
+</script>
