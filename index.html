@@ -11,8 +11,8 @@
         href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&family=Nanum+Brush+Script&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+KR:wght@200..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
-    <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
     <script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
     <title>CHANWOO CHOI | Developer's Portfolio</title>
 </head>
@@ -23,11 +23,11 @@
             <div id="header-wrap" class="header-wrap">
                 <nav id="nav" class="nav">
                     <ul>
-                        <li>
+                        <!-- <li>
                             <a href="#" class="home_icon">
                                 <span class="material-symbols-outlined">home</span>
                             </a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="#about-me">ABOUT ME</a>
                         </li>
@@ -43,10 +43,9 @@
         </header>
 
         <main id="fullpage" class="contents">
-            <section id="main-page" class="section main-page" data-anchor="main-page">
-
-            </section>
-            <section id="about-me" class="section about-me" data-anchor="about-me" >
+            <!-- <section id="main-page" class="section main-page" data-anchor="main-page">
+            </section> -->
+            <section id="about-me" class="section about-me" data-anchor="about-me">
                 <p class="about-me-title">초보 개발자 최찬우입니다.</p> <br>
                 <p>
                     웹 개발이라는 분야에 처음 도전할 때는<br>
@@ -83,31 +82,76 @@
                     <li>사용자 경험을 생각하며, 협업과 소통을 중요하게 여기는 개발자</li>
                 </ul>
             </section>
-            <section id="skill" class="section skill" data-anchor="skill">
+            <section id="portfolio skill" class="section skill" data-anchor="skill">
                 <div class="skill-container">
                     <div class="skill-wrap">
+                        <h3>FrontEnd</h3>
                         <img class="skill-icon" src="images/icons/html5.svg" alt="html logo">
                         <img class="skill-icon" src="images/icons/css3.svg" alt="css3 logo">
                         <img class="skill-icon" src="images/icons/javascript.svg" alt="javascript logo">
                         <img class="skill-icon" src="images/icons/jquery.svg" alt="typescript logo">
                         <img class="skill-icon" src="images/icons/react.svg" alt="react logo">
                         <img class="skill-icon" src="images/icons/bootstrap.svg" alt="bootstrap logo">
-                    </div>
-                    <div class="skill-wrap">
+                        <br>
+                        <h3>BackEnd</h3>
                         <img class="skill-icon" src="images/icons/spring.svg" alt="spring logo">
                         <img class="skill-icon" src="images/icons/YAML.svg" alt="YAML logo">
                         <img class="skill-icon" src="images/icons/python.svg" alt="python logo">
                         <img class="skill-icon" src="images/icons/django.svg" alt="django logo">
                         <img class="skill-icon" src="images/icons/mysql.svg" alt="mysql logo">
-                    </div>
-                    <div class="skill-wrap">
+                        <br>
+                        <h3>DevOps / Infra</h3>
                         <img class="skill-icon" src="images/icons/docker.svg" alt="docker logo">
                         <img class="skill-icon" src="images/icons/jenkins.svg" alt="jenkins logo">
                         <img class="skill-icon" src="images/icons/nginx.svg" alt="nginx logo">
                         <img class="skill-icon" src="images/icons/github.svg" alt="github logo">
+                        <img class="skill-icon" src="images/icons/openai.svg" alt="openai logo">
+                        <img class="skill-icon" src="images/icons/OpenAPI.svg" alt="OpenAPI logo" >
                     </div>
                 </div>
             </section>
+
+            <!-- 오아시스마켓 -->
+            <section id="portfolio oasis" class="section portfolio" data-anchor="portfolio">
+                <div id="amore-chat-container" class="amore-chat-container">
+                    <div class="amore-chat-wrap">
+                        <div class="amore-chat">
+                            <h2>오아시스마켓 구현</h2>
+                            <br>
+                            <p>SpringBoot의 WebSocket을 이용한<br>오아시스마켓 쇼핑몰 사이트를 구현하였습니다.</p>
+                            <br>
+                            <div class="portfolio-flex">
+                                <p>BackEnd</p>
+                                <img src="images/icons/spring.svg" alt="">
+                                <img src="images/icons/mysql.svg" alt="">
+                            </div>
+                            <div class="portfolio-flex">
+                                <p>FrontEnd</p>
+                                <img src="images/icons/react.svg" alt="">
+                                <img src="images/icons/CSS3.svg" alt="">
+                                <img src="images/icons/bootstrap.svg" alt="">
+                            </div>
+                            <div class="portfolio-flex">
+                                <p>ETC</p>
+                                <img src="images/icons/openai.svg" alt="">
+                                <img src="images/icons/OpenAPI.svg" alt="">
+                                <img src="images/icons/toss.jpg" alt="">
+                            </div>
+                            <div class="portfolio-flex">
+                                <p>Source Code</p>
+                                <a href="https://github.com/totoruudev/oasis">
+                                    <img src="images/icons/github.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-imgbox">
+                            <img src="images/oasis_1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 아모레퍼시픽 채팅방 -->
             <section id="portfolio amore" class="section portfolio" data-anchor="portfolio">
                 <div id="amore-chat-container" class="amore-chat-container">
                     <div class="amore-chat-wrap">
@@ -116,26 +160,34 @@
                             <br>
                             <p>SpringBoot의 WebSocket을 이용한<br>관리자와 사용자의 1:1 채팅방을 구현했습니다.</p>
                             <br>
-                            <div class="amore-chat-flex">
+                            <div class="portfolio-flex">
                                 <p>BackEnd</p>
                                 <img src="images/icons/spring.svg" alt="">
                                 <img src="images/icons/mysql.svg" alt="">
                             </div>
-                            <div class="amore-chat-flex">
+                            <div class="portfolio-flex">
                                 <p>FrontEnd</p>
                                 <img src="images/icons/html5.svg" alt="">
                                 <img src="images/icons/CSS3.svg" alt="">
                                 <img src="images/icons/bootstrap.svg" alt="">
                             </div>
+                            <div class="portfolio-flex">
+                                <p>Source Code</p>
+                                <a href="https://github.com/totoruudev/amore">
+                                    <img src="images/icons/github.svg" alt="">
+                                </a>
+                            </div>
                         </div>
-                        <div class="amore-chat-imgbox">
-                            <img src="images/amorechat_admin_1-down.png" alt="사용자 채팅">
+                        <div class="portfolio-imgbox">
+                            <img src="images/amorechat_admin_1-down.png" alt="">
                             <img src="images/amorechat_1.png" alt="">
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="portfolio cgv" class="section portfolio" data-anchor="portfolio">
+
+            <!-- 해피포인트 챗봇 -->
+            <section id="portfolio apgroup" class="section portfolio" data-anchor="portfolio">
                 <div id="amore-chat-container" class="amore-chat-container">
                     <div class="amore-chat-wrap">
                         <div class="amore-chat">
@@ -148,42 +200,82 @@
                                 <br>예외 메시지를 출력하도록 설정했습니다.
                             </p>
                             <br>
-                            <div class="amore-chat-flex">
+                            <div class="portfolio-flex">
                                 <p>BackEnd</p>
                                 <img src="images/icons/spring.svg" alt="">
                                 <img src="images/icons/mysql.svg" alt="">
                             </div>
-                            <div class="amore-chat-flex">
+                            <div class="portfolio-flex">
                                 <p>FrontEnd</p>
                                 <img src="images/icons/html5.svg" alt="">
                                 <img src="images/icons/CSS3.svg" alt="">
                                 <img src="images/icons/bootstrap.svg" alt="">
                             </div>
+                            <div class="portfolio-flex">
+                                <p>ETC</p>
+                                <img src="images/icons/openai.svg" alt="">
+                                <img src="images/icons/OpenAPI.svg" alt="">
+                            </div>
+                            <div class="portfolio-flex">
+                                <p>Source Code</p>
+                                <a href="https://github.com/totoruudev/happypoint-chatbot">
+                                    <img src="images/icons/github.svg" alt="">
+                                </a>
+                            </div>
                         </div>
-                        <div class="amore-chat-imgbox">
-                            <img src="images/happypoint.png" alt="사용자 채팅">
+                        <div class="portfolio-imgbox">
+                            <img src="images/happypoint.png" alt="">
                             <img src="images/happypoint_1.png" alt="">
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section footer-section" id="footer-section" data-anchor="footer">
-                <footer id="footer" class="footer">
-                    <div id="footer-wrap" class="footer-wrap">
-                        <p class="footer-title">&copy; 2025 CHANWOO CHOI. ALL rights reserved.</p>
-                        <div class="footer-github">
-                            <a href="https://github.com/totoruudev" target="_blank" rel="noopener noreferrer" class="footer-github" aria-label="GitHub">
-                                <img style="width: 50px; height: 50px;" src="images/icons/github.svg" alt="github logo">
-                            </a>
+
+            <!-- 만나몰 -->
+            <section id="portfolio mannamall" class="section portfolio" data-anchor="portfolio">
+                <div id="amore-chat-container" class="amore-chat-container">
+                    <div class="amore-chat-wrap">
+                        <div class="amore-chat">
+                            <h2>만나몰 사이트 구현</h2>
+                            <br>
+                            <p>HTML과 CSS, JS를 이용한 <br> 만나몰 사이트를 구현했습니다.</p>
+                            <br>
+                            <div class="portfolio-flex">
+                                <p>FrontEnd</p>
+                                <img src="images/icons/html5.svg" alt="">
+                                <img src="images/icons/CSS3.svg" alt="">
+                                <img src="images/icons/jquery.svg" alt="">
+                            </div>
+                            <div class="portfolio-flex">
+                                <p>Source Code</p>
+                                <a href="https://github.com/totoruudev/mannamall">
+                                    <img src="images/icons/github.svg" alt="">
+                                </a>
+                            </div>
                         </div>
-                        <a href="mailto:totorudev@gmail.com" aria-label="Email" style="text-align: center;">
-                            <i class="fas fa-envelope"></i> totorudev@gmail.com
-                        </a>
-                        <br><br>
-                        <p style="text-align: center;">Last Update: 2025.07.31.</p>
+                        <div class="portfolio-imgbox">
+                            <img src="images/mannamall_1.png" alt="">
+                            <img src="images/mannamall_2.png" alt="">
+                        </div>
                     </div>
-                </footer>
+                </div>
             </section>
+            <footer id="footer" class="footer">
+                <div id="footer-wrap" class="footer-wrap">
+                    <p class="footer-title">&copy; 2025 CHANWOO CHOI. ALL rights reserved.</p>
+                    <div class="footer-github">
+                        <a href="https://github.com/totoruudev" target="_blank" rel="noopener noreferrer"
+                            class="footer-github" aria-label="GitHub">
+                            <img style="width: 50px; height: 50px;" src="images/icons/github.svg" alt="github logo">
+                        </a>
+                    </div>
+                    <a href="mailto:totorudev@gmail.com" aria-label="Email" style="text-align: center;">
+                        <i class="fas fa-envelope"></i> totorudev@gmail.com
+                    </a>
+                    <br><br>
+                    <p style="text-align: center;">Last Update: 2025.08.06.</p>
+                </div>
+            </footer>
         </main>
     </div>
 </body>
@@ -191,13 +283,13 @@
 </html>
 
 <script>
-new fullpage('#fullpage', {
-    anchors: ['main-page', 'about-me', 'skill', 'cgv', 'happypoint','amore', 'apgroup','footer'],
-    menu: '#menu',
-    navigation: true,
-    scrollOverflow: true,
-    autoScrolling: true,
-    fitToSection: true,
-});
+    new fullpage('#fullpage', {
+        anchors: ['about-me', 'skill', 'cgv', 'happypoint', 'amore', 'apgroup', 'mannamall'],
+        menu: '#menu',
+        navigation: true,
+        scrollOverflow: true,
+        autoScrolling: true,
+        fitToSection: true,
+    });
 
 </script>
